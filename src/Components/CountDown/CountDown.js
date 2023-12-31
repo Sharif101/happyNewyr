@@ -27,22 +27,26 @@ const CountDown = ({ newYear }) => {
   }, [newYear]);
 
   return (
-    <div className="countdown">
-      <div className="time">
-        <div>{days}</div>
-        <p>Day</p>
-      </div>
-      <div className="time">
-        <div>{hours}</div>
-        <p>Hour</p>
-      </div>
-      <div className="time">
-        <div>{minutes}</div>
-        <p>Minute</p>
-      </div>
-      <div className="time">
-        <div>{seconds}</div>
-        <p>Second</p>
+    <div className="container">
+      <h3>Happy New Year</h3>
+      <p>Wishing you a year of fulfillment and happiness. Happy New Year</p>
+      <div className="countdown">
+        <div className="time">
+          <p>{days}</p>
+          <p>Day</p>
+        </div>
+        <div className="time">
+          <p>{hours}</p>
+          <p>Hour</p>
+        </div>
+        <div className="time">
+          <p>{minutes}</p>
+          <p>Minute</p>
+        </div>
+        <div className="time">
+          <p>{seconds}</p>
+          <p>Second</p>
+        </div>
       </div>
     </div>
   );

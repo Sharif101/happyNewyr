@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&family=Sevillana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Nanum+Myeongjo&family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
 .App {
   text-align: center;
 }
@@ -59,7 +63,7 @@
   margin: 0 15px;
 }
 
-.countdown .time div {
+.countdown .time > p:nth-child(1) {
   width: 150px;
   height: 100px;
   background-color: #222;
@@ -71,4 +75,32 @@
 
 p {
   margin: 6px;
+}
+.container h3,
+.container p {
+  margin: 0;
+}
+.container > h3 {
+  font-family: "Lobster", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+}
+.container > p {
+  font-family: "Nanum Myeongjo", serif;
+  padding: 15px 0 30px;
+}
+
+@media (max-width: 420px) {
+  .countdown {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .countdown .time {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    margin: 0 auto;
+  }
 }
