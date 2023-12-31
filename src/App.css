@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+
+.App {
+  background-color: #282a30;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+}
+
+.countdown {
+  display: flex;
+}
+
+.countdown .time {
+  background-color: rgb(255, 238, 0);
+  color: black;
+  font-weight: bold;
+  margin: 0 15px;
+}
+
+.countdown .time div {
+  width: 150px;
+  height: 100px;
+  background-color: #222;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 36px;
+}
+
+p {
+  margin: 6px;
+}
